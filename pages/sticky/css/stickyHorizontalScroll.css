@@ -23,6 +23,8 @@ body {
 
 /*height the complete area the items*/
 .height-stick {
+    /*Relative because the content move en relation this*/
+    position: relative;
     height: 400vh;
     width: 100vw;
 }
