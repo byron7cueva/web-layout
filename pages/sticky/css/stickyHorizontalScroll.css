@@ -20,3 +20,56 @@ body {
     vertical-align: middle;
     text-align: center;
 }
+
+/*height the complete area the items*/
+.height-stick {
+    height: 400vh;
+    width: 100vw;
+}
+
+/*Section to show on viewport*/
+.sticky-section {
+    bottom: 0;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/*Overflow the content for viewport section*/
+.overflow-mask {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+}
+
+/*Scrollable content*/
+.scrollable-section {
+    width: 400vh;
+}
+
+/*Container items*/
+.collection-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/*Item*/
+.collection-content article {
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    height: 50vh;
+    margin: 0 20px;
+    text-align: center;
+    width: 50vw;
+    display: table;
+}
+
+.collection-content article span {
+    display: table-cell;
+    font-size: 2em;
+    vertical-align: middle;
+}
