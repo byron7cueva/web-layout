@@ -5,6 +5,7 @@ body, h1, h2, p {
 body {
     font-size: 16px;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -13,24 +14,24 @@ body {
     display: table;
     height: 100vh;
     width: 100vw;
+    text-align: center;
 }
 
 .hero h1 {
     display: table-cell;
     vertical-align: middle;
-    text-align: center;
 }
 
 /*height the complete area the items*/
 .height-stick {
     /*Relative because the content move en relation this*/
     position: relative;
-    height: 400vh;
-    width: 100vw;
+    height: 350vh;
 }
 
 /*Section to show on viewport*/
 .sticky-section {
+    padding-top: 3em;
     bottom: 0;
     height: 100vh;
     position: sticky;
@@ -38,13 +39,18 @@ body {
     width: 100%;
 }
 
+.sticky-section h2 {
+    position: absolute;
+    left: 2em;
+}
+
 /*Overflow the content for viewport section*/
 .overflow-mask {
     align-items: center;
     display: flex;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
 }
 
 /*Scrollable content*/
@@ -57,10 +63,12 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
+    justify-content: flex-start;
+    justify-content: flex-start;
 }
 
 /*Item*/
-.collection-content article {
+article {
     background-color: #ecf0f1;
     border-radius: 5px;
     height: 50vh;
@@ -70,8 +78,21 @@ body {
     display: table;
 }
 
-.collection-content article span {
+article span {
     display: table-cell;
     font-size: 2em;
     vertical-align: middle;
+}
+
+.description {
+    padding: 10em 0;
+    background-color: chocolate;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
 }
